@@ -1,0 +1,196 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('https://www.modernrugs.com/rug_images/7410_1800_40030_large.jpg');
+    background-size: cover; /* يجعل الصورة تغطي الصفحة بالكامل */
+    background-position: center; /* يحدد مكان الصورة في منتصف الصفحة */
+    background-attachment: fixed; /* يجعل الصورة ثابتة عندما يتم التمرير */
+}
+
+header {
+    background: linear-gradient(45deg, #2d3436, #1e272e);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+    align-items: center; /* توسيط المحتوى عموديًا */
+}
+
+.logo {
+    width: 200px;  /* تحديد عرض الصورة */
+    height: 170px; /* الحفاظ على النسبة الأصلية للارتفاع */
+}
+
+h2 {
+    font-size: 2rem; /* زيادة حجم الخط هنا */
+    margin-top: 10px; /* إضافة مسافة بين الصورة والنص */
+    color: white; /* جعل النص أبيض */
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end; /* يجعل العناصر في nav تظهر على اليمين */
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0; /* إزالة الهامش الافتراضي للقائمة */
+}
+
+header nav ul li {
+    font-size: 1.5rem; /* زيادة حجم الخط لعناصر القائمة */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e74c3c; /* تغيير اللون عند التمرير */
+}
+
+.cart-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cart-btn:hover {
+    background-color: #c0392b;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #2d3436; /* خلفية سوداء */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-item h3 {
+    margin: 15px 0;
+    font-size: 1.5rem; /* زيادة حجم الخط */
+    color: white; /* لون النص أبيض */
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: white; /* لون النص أبيض */
+}
+
+.order-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+footer a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    display: flex;
+    justify-content: center; /* لتوسيط المحتوى أفقيا */
+    align-items: center; /* لتوسيط المحتوى عموديا */
+    height: 10vh; /* الارتفاع المحدد للعنوان */
+    text-align: center; /* لتوسيط النص */
+    font-size: 2rem;
+}
+
+#about-us {
+    background-image: url('file:///C:/Users/ASUS/Downloads/photo 666.jpg'); /* استبدل path_to_image.jpg بمسار الصورة */
+    background-size: cover; /* تجعل الصورة تغطي الفقرة بالكامل */
+    background-position: center; /* تجعل الصورة تتمركز داخل العنصر */
+    background-repeat: no-repeat; /* تمنع تكرار الصورة */
+    padding: 20px; /* إضافة مسافة داخلية لظهور النص بشكل واضح */
+    color: white; /* لون النص أبيض */
+    font-size: 2rem; /* تكبير الخط */
+    text-align: center; /* توسيط النص */
+    border-radius: 10px; /* إضافة حواف مستديرة */
+}
+
+
+.slider-container {
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center; /* توسيط عمودي */
+}
+
+.slider {
+    width: 50%; /* حجم العرض */
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* زوايا ناعمة */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
