@@ -157,7 +157,7 @@ h1 {
 }
 
 #about-us {
-    background-image: url('file:///C:/Users/ASUS/Downloads/photo 666.jpg'); /* استبدل path_to_image.jpg بمسار الصورة */
+    background-image: url('https://github.com/MazakAlshark/-MazakAlshark/blob/main/photo%20666.jpg?raw=true'); /* استبدل path_to_image.jpg بمسار الصورة */
     background-size: cover; /* تجعل الصورة تغطي الفقرة بالكامل */
     background-position: center; /* تجعل الصورة تتمركز داخل العنصر */
     background-repeat: no-repeat; /* تمنع تكرار الصورة */
